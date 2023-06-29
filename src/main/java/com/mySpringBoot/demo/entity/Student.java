@@ -15,9 +15,9 @@ public class Student {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 	@Column(name="first_name", nullable = false)
-	private String firstname;
+	private String firstName;
 	@Column(name="last_name")
-	private String lastname;
+	private String lastName;
 	@Column(name="email", nullable = false)
 	private String email;
 	
@@ -32,8 +32,8 @@ public class Student {
 	 */
 	public Student(String firstname, String lastname, String email) {
 		super();
-		this.firstname = firstname;
-		this.lastname = lastname;
+		this.firstName = firstname;
+		this.lastName = lastname;
 		this.email = email;
 	}
 	public Long getId() {
@@ -42,17 +42,17 @@ public class Student {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getFirstname() {
-		return firstname;
+	public String getFirstName() {
+		return firstName;
 	}
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
+	public void setFirstName(String firstname) {
+		this.firstName = firstname;
 	}
-	public String getLastname() {
-		return lastname;
+	public String getLastName() {
+		return lastName;
 	}
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
+	public void setLastName(String lastname) {
+		this.lastName = lastname;
 	}
 	public String getEmail() {
 		return email;
